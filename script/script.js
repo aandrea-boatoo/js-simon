@@ -7,7 +7,7 @@ const timerSection = document.getElementById("timer");
 const numberSection = document.getElementById("numbers");
 const guessSection = document.getElementById("guess")
 const inputSection = document.getElementById("input");
-const resultSection = document.getElementById("result");
+const resultSection = document.getElementById("resultSection");
 const numContainer = document.getElementById("numCont");
 const timerDiv = document.getElementById("time");
 // costanti js
@@ -30,7 +30,7 @@ startButton.addEventListener('click', function(){
                 let inputGuess = document.createElement("input");
                 let typeInput = document.createAttribute("type");
                 inputGuess.getAttribute(typeInput);
-                inputGuess.classList.add("w-25")
+                inputGuess.classList.add("inputGuess")
                 inputGuess.id = i;
                 inputGuess.type = "number";
                 inputGuess.name = "numero"
@@ -57,17 +57,18 @@ startButton.addEventListener('click', function(){
         }
 })
 
-    guessArray.push(inputGuess.value);
     // DOPO 30 SECONDI
 checkButton.addEventListener('click', function(){
     for(let i = 1 ; i < numCounter ; i++){
+        guessArray.push(inputGuess.value[i])
         if(numbersArray.includes(guessArray[i])){
            rightGuess += 1 
-           const result = document.createElement("div")
-           result.innerHTML = `Bravo, hai indovinato ${rightGuess} numeri su ${numCounter}!`
-           resultSection.appendChild(result);
         }
     }
+    const result = document.createElement("div")
+    result.innerHTML = `Bravo, hai indovinato ${rightGuess} numeri su ${numCounter}!`
+    result.classList.add('result', "fs-3", "fw-bold")
+    resultSection.appendChild(result);
         
 
 })
