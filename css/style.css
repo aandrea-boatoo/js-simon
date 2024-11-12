@@ -3,3 +3,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    background-color: rgba(0, 0, 255, 0.277);
+    height: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+main{
+    width: 700px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px, solid, rgb(95, 95, 255);
+    background-color: rgb(141, 141, 255);
+}
+
+section{
+    margin: 15px 0;
+    padding: 10px 15px;
+}
+
+#timer{
+    width: 100%;
+    color: aliceblue;  
+}
+button{
+    color: aliceblue;
+    padding: 5px 10px;
+}
+#start{
+    border-radius: 10px;
+    border: 2px, solid, rgb(95, 95, 255);
+    background-color: blue;
+}
+#add{
+    border-radius: 10px;
+    border: 2px, solid, rgb(45, 154, 35);
+    background-color: rgb(1, 180, 1);
+    height: 45px;
+}
+#numbers{
+    width: 100%;
+    color: aliceblue;
+}
+
+#check{
+    border-radius: 10px;
+    border: 2px, solid, rgb(154, 35, 35);
+    background-color: rgb(180, 1, 1);
+    height: 45px;
+    margin-top: 10px;
+}

@@ -13,18 +13,22 @@
         <p>Regole: prova a memorizzare quanti piu numeri possibili in 30 secondi. <br>
             Se ti senti abbastanza bravo puoi aumentare i numeri da memorizzare</p>
     </header>
-    <main>
-        <section id="timer">
-            <button id="start">Avvia Timer</button>
-            <div id="time"></div>
+    <main class="d-flex justify-content-between flex-wrap">
+        <section id="timer" class="d-flex justify-content-between">
+            <div>
+                <button id="start">Avvia Timer</button>
+                <div id="time" class="fw-bold fs-3">30</div>
+            </div>
+            <button id="add">Aggiungi un numero</button>
         </section>
         <section id="numbers">
-            <button id="add">Aggiungi un numero</button>
-            <div id="numCont">
-
+            <div id="numCont"class="d-flex justify-content-between">
             </div>
         </section>
-        <section id="input" class="d-none">
+        <section id="guess" class="d-none">
+            <div id="input" class="d-flex justify-content-between flex-wrap">
+
+            </div>
             <button id="check">Conferma</button>
         </section>
         <section id="result">
